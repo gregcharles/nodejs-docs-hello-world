@@ -1,2 +1,4 @@
-@Library('npmNode@feature/separate-aws') _
-npmNode{}
+withEnv(['S3_BUCKET=""']) {
+    @Library('npmNode@feature/separate-aws') _
+    npmNode{}
+}
